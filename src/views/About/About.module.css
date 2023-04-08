@@ -127,18 +127,18 @@
 
   }
   .image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
   .divText h1 {
-    font-size: 23px;
+    font-size: 18px;
   }
   .divText h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .divText p {
     /* border: 1px solid green; */
-    width:250px;
+    width:180px;
     font-size: 15px;
     margin: auto;
   }

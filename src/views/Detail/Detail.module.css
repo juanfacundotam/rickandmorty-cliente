@@ -121,3 +121,17 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 585px) {
+  .divDetail .divText h1 {
+   font-size: 25px;
+   border: 1px solid green;
+  }
+  .divDetail .divText {
+    font-family: "Poiret One", cursive;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .divDetail .divImg {
+   width: 200px;
+  }
+}
