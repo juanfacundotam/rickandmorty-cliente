@@ -7,6 +7,7 @@ import { Link, useLocation } from "react-router-dom";
 import { getFavorites } from "../../redux/actions";
 import { useDispatch, useSelector, connect } from "react-redux";
 import { motion } from "framer-motion";
+import { AiFillHeart } from "react-icons/ai";
 
 // { id, name, species, gender, image, onClose }
 
@@ -89,7 +90,7 @@ export default function Card(props) {
           }`}
           onClick={handleFavorite}
         >
-          ❤
+          <AiFillHeart/>
         </button>
 
         {pathname !== "/favorites" && (
