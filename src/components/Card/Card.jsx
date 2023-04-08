@@ -90,7 +90,7 @@ export default function Card(props) {
           }`}
           onClick={handleFavorite}
         >
-          <AiFillHeart/>
+          <AiFillHeart className={styles.icon}/>
         </button>
 
         {pathname !== "/favorites" && (

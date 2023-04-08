@@ -58,6 +58,13 @@
   z-index: 2;
   transition: 0.3s;
 }
+.container .divButton .heartbtn .icon {
+position: absolute;
+top: 7px;
+left: 6px;
+margin: 0;
+padding: 0;
+}
 
 .container:hover {
   /* background-color: rgba(0, 0, 0, 0.288); */
