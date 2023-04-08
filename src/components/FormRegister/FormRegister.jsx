@@ -32,7 +32,7 @@ export default function FormRegister(props) {
     console.log(userData);
 
     const response = await axios.post(
-      "http://localhost:3001/rickandmorty/login",
+      "/rickandmorty/login",
       userData
     );
     if (response.data.error) alert("El usuario ya existe");

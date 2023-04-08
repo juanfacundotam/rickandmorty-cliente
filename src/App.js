@@ -25,15 +25,14 @@ function App() {
     const { username, password } = userData;
     try {
       const response = await axios.get(
-        `${URL_BASE}/rickandmorty/login?username=${username}&password=${password}`
+        `/rickandmorty/login?username=${username}&password=${password}`
       );
       if (response.data.access) {
         setAccess(true);
         navigate("/home");
-      } else {
-        alert("Usuario y/o contraseña incorrecta");
       }
     } catch (error) {
+      alert("Usuario y/o contraseña incorrecta");
       console.log(error.message);
     }
   }
@@ -51,13 +50,12 @@ function App() {
   // const URL_BASE = "https://be-a-rym.up.railway.app/api";
   // const API_KEY = "b755a0b71e3e.670b9fc34bc30567595d";
 
-  const URL_BASE = "http://localhost:3001";
   const onSearch = async (character) => {
     if (characters.find((char) => char.id === Number(character))) {
       alert("No se permiten ID repetidos");
     } else {
       const response = await axios.get(
-        `${URL_BASE}/rickandmorty/onsearch/${character}`
+        `/rickandmorty/onsearch/${character}`
       );
       if (response.data.name) {
         console.log(response.data)

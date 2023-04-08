@@ -39,13 +39,13 @@ export default function Card(props) {
       image,
     };
     console.log(origin.name)
-    await axios.post("http://localhost:3001/rickandmorty/fav", body);
+    await axios.post("/rickandmorty/fav", body);
     console.log("Adherido a favoritos");
 
   };
 
   const deleteFavorite = async (id) => {
-    await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`);
+    await axios.delete(`/rickandmorty/fav/${id}`);
     // dispatch(getFavorites());
     alert("Eliminado de los favoritos con exito");
     dispatch(getFavorites())
