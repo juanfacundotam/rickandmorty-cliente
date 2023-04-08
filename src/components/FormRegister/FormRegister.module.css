@@ -1,0 +1,177 @@
+.form {
+    background-color: rgba(0, 0, 0, 0.702);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    min-height: 400px;
+  }
+  .form h1 {
+    /* border: 1px solid red; */
+    font-size: 40px;
+    font-family: "Poiret One", cursive;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    padding: 0 10px 0 10px;
+    margin-top: 0;
+  }
+  
+  .form .divUser {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px 30px 30px;
+  }
+  .form .divUser label {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Poiret One", cursive;
+    margin-bottom: 10px;
+  }
+  .form .divUser input {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.824);
+    height: 20px;
+    border-radius: 5px;
+    color: white;
+  }
+  .form .divUser input:focus {
+    background-color: rgb(0, 0, 0);
+    outline: none;
+  
+    color: rgb(255, 255, 255);
+  }
+  .form .divUser input:-webkit-autofill,
+  .form .divUser input:-webkit-autofill:hover,
+  .form .divUser input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.479) inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+  }
+  
+  .form .divPass {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  .form .divPass label {
+    font-family: "Poiret One", cursive;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .form .divPass input {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.824);
+    height: 20px;
+    border-radius: 5px;
+    color: white;
+  }
+  .form .divPass input:focus {
+    background-color: rgb(0, 0, 0);
+    outline: none;
+  
+    color: rgb(255, 255, 255);
+  }
+  .form .divPass input:-webkit-autofill,
+  .form .divPass input:-webkit-autofill:hover,
+  .form .divPass input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.479) inset !important;
+    box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.479) inset !important;
+  }
+  
+  .form .button {
+    color: white;
+    background-color: rgba(255, 0, 247, 0.512);
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 5px 15px 8px 15px;
+    border-radius: 10px;
+    border: transparent;
+    transition: 0.3s;
+  }
+  
+  .form .button:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 0, 255);
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0px 0px 122px 18px rgba(219, 27, 206, 0.8);
+    -moz-box-shadow: 0px 0px 122px 18px rgba(219, 27, 206, 0.8);
+    box-shadow: 0px 0px 122px 18px rgba(219, 27, 206, 0.8);
+  }
+  .form .linkBtn {
+    border: 1px solid green;
+    color: white;
+    text-decoration: none;
+    /* background-color: rgba(255, 0, 247, 0.512); */
+    background-color: rgba(0, 0, 0, 0.702);
+    font-family: "Poiret One", cursive;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 5px 15px 8px 15px;
+    border-radius: 10px;
+    border: transparent;
+    transition: 0.3s;
+  }
+  
+  .form .linkBtn:hover {
+    transform: scale(1.1);
+    color: rgb(255, 0, 255);
+    border: 1px solid transparent;
+  }
+  .form p {
+    color: rgb(255, 4, 4);
+    text-align: start;
+  }
+  
+  .form .divPass .error {
+    border: 2px solid red;
+  }
+  
+  .form .divUser .error {
+    border: 2px solid red;
+  }
+  
+  .divErrores {
+    background-color: rgba(0, 0, 0, 0.659);
+    border: 3px solid rgba(255, 0, 0, 0.479);
+    color: white;
+    font-family: "Poiret One", cursive;
+    width: 290px;
+    height: fit-content;
+    text-align: star;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  .divErroresVacio {
+    background-color: transparent;
+    border: transparent;
+  }
+  .divErrores p {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .form h1 {
+      /* border: 1px solid red; */
+      font-size: 30px;
+    }
+  }
+  

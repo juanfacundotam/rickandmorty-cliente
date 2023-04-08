@@ -1,0 +1,189 @@
+.container {
+  /* background-color: #1a1b1ad6; */
+
+  border-radius: 10px;
+  width: 150px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  background: linear-gradient(600deg, #900037d3, #85078eea);
+  background-position: top;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.5s;
+  /* width: ; */
+}
+/* .container .divButton {
+  background-color: black;
+  border: 1px solid green;
+  height: 20px;
+} */
+.container .divButton .closebtn {
+  background-color: rgba(205, 11, 195, 0.452);
+  color: rgb(255, 255, 255);
+  border: none;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  top: -40px;
+  /* top: 10px; */
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.container .divButton .heartbtn {
+  /* background-color: rgb(166, 3, 101); */
+  background-color: rgba(205, 11, 195, 0.452);
+  /* color: white; */
+  border: none;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+  top: -40px;
+  right: 20px;
+  font-size: 18px;
+  /* top: 10px; */
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.container:hover {
+  /* background-color: rgba(0, 0, 0, 0.288); */
+  /* border: 4px solid rgb(95, 117, 95); */
+  background-color: black;
+  opacity: 0.9;
+  transform: scale(1.1);
+  /* margin: 5px; */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  /* -webkit-box-shadow:0px 0px 74px 6px rgba(255,46,213,0.86);
+  -moz-box-shadow: 0px 0px 74px 6px rgba(255,46,213,0.86);
+  box-shadow: 0px 0px 74px 6px rgba(255,46,213,0.86); */
+}
+.container:hover .closebtn {
+  top: 10px;
+}
+.container .closebtn:hover {
+  background-color: rgb(166, 3, 101);
+  color: white;
+  transform: rotate(180deg);
+}
+.container:hover .heartbtn {
+  top: 10px;
+}
+.container .heartbtn:hover {
+  /* background-color: rgb(166, 3, 101); */
+  background-color: rgba(205, 11, 195, 0.822);
+  /* color: rgb(208, 7, 7); */
+  /* transform: rotate(180deg); */
+}
+.container .desHeart {
+  color: white;
+}
+.container .actHeart {
+  color: rgb(255, 0, 0);
+}
+
+.container .image {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.container .containertitles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.container .containertitles h2 {
+  /* border: 1px solid green; */
+font-family: "Poiret One", cursive;
+
+  /* font-family: "Londrina Solid", cursive; */
+
+  /* font-family: "Rubik Vinyl", cursive; */
+  /* font-family: "Wendy One", sans-serif; */
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+.container .containertitles .title {
+  /* text-decoration:underline; */
+  color: rgb(255, 255, 255);
+  margin: 15px 0 15px 0;
+}
+.container .containertitles .title:hover {
+  color: rgb(255, 0, 162);
+}
+
+.container .containertitles .divhab {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 5px;
+}
+.container .containertitles .divhab h2 {
+  /* border: 1px solid yellow; */
+  margin: 0px 15px 5px 15px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+/* .linea {
+  position: absolute;
+  color: rgb(158, 137, 97);
+  bottom: 37px;
+  left: 0;
+  width: 198px;
+  padding: 0;
+  z-index: 20;
+} */
+/* h2{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    position:absolute;
+    z-index: 1;
+    
+} */
+
+/* .container:hover .image{
+   display: none;
+    z-index: 1;
+} */
+
+
+/* 
+@media screen and (max-width: 768px) {
+  .containerCards {
+
+    width: 100vh;
+  } 
+}
+
+@media screen and (max-width: 585px) {
+  
+  
+} */
+
+@media screen and (max-width: 450px) {
+  .container {
+    background-color: transparent;
+    width: 150px;
+  } 
+
+}

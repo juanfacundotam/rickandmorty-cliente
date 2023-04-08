@@ -1,0 +1,147 @@
+.divAbout {
+  /* background-color: rgba(151, 74, 74, 0.205); */
+  /* background-color: rgba(153, 153, 153, 0.1); */
+
+  min-width: 70%;
+  max-width: 70%;
+  margin-bottom: 30PX;
+  background-color: rgba(0, 0, 0, 0.507);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+  z-index: 0;
+}
+
+.divAbout .divText {
+  width: 400px;
+  font-size: 20px;
+  font-family: "Rampart One", cursive;
+  text-align: center;
+  font-size: 18px;
+}
+.divAbout .divText p {
+  font-family: "Poiret One", cursive;
+  margin: 5px;
+}
+
+.image {
+  border-radius: 15px;
+  width: 280px;
+  /* max-width: 25%; */
+  margin-right: 25px;
+}
+
+
+.customLoader {
+  margin: auto;
+  width: 70px;
+  height: 26px;
+  background: #766df4;
+  border-radius: 50px;
+  --c: radial-gradient(farthest-side, #000 92%, #0000);
+  --s: 18px 18px;
+  -webkit-mask: var(--c) left 4px top 50%, var(--c) center,
+    var(--c) right 4px top 50%, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-mask-repeat: no-repeat;
+  animation: cu1 1.5s infinite;
+}
+
+@keyframes cu1 {
+  0% {
+    -webkit-mask-size: 0 0, 0 0, 0 0, auto;
+  }
+  16.67% {
+    -webkit-mask-size: var(--s), 0 0, 0 0, auto;
+  }
+  33.33% {
+    -webkit-mask-size: var(--s), var(--s), 0 0, auto;
+  }
+  50% {
+    -webkit-mask-size: var(--s), var(--s), var(--s), auto;
+  }
+  66.67% {
+    -webkit-mask-size: 0 0, var(--s), var(--s), auto;
+  }
+  83.33% {
+    -webkit-mask-size: 0 0, 0 0, var(--s), auto;
+  }
+  100% {
+    -webkit-mask-size: 0 0, 0 0, 0 0, auto;
+  }
+}
+
+.divLoader {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 270px;
+}
+
+@media screen and (max-width: 1050px) {
+  .divAbout {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+  }
+  .image {
+    margin: 30px 30px 10px 30px;
+    width: 280px;
+    height: 280px;
+
+  }
+  .divText {
+    /* font-size: 10px; */
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .divText h1 {
+    font-size: 32px;
+  }
+  .image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .divAbout .divText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+  .divText h1 {
+    font-size: 23px;
+  }
+  .divText h3 {
+    font-size: 20px;
+  }
+  .divText p {
+    /* border: 1px solid green; */
+    width:250px;
+    font-size: 15px;
+    margin: auto;
+  }
+  
+}
+

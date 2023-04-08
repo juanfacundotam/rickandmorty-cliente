@@ -1,0 +1,7 @@
+.divError {
+    background-image: url(../../assets/error.jpg);
+    background-position: top center;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}

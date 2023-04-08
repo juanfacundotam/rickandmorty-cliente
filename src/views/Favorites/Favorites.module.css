@@ -1,0 +1,44 @@
+.divFavorites {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.507);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 60%;
+  height: fit-content;
+  min-height: 280px;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.divSelects {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  top: -70px;
+}
+
+.divSelects select {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.divCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1050px) {
+  .divFavorites {
+  margin-top: 92px;
+  }
+}

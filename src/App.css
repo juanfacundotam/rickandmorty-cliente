@@ -1,0 +1,36 @@
+.App {
+  background-image: url(./assets/fondo18.jpg);
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+
+  background-blend-mode: multiply;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+.App .divSearch {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(247, 9, 235, 0.507); */
+  width: 100%;
+}
+
+.App .divRoutes {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgba(247, 9, 235, 0.507); */
+  width: 100%;
+  height: fit-content;
+}
+
+/* .App .divCards { */
+/* display: flex; */
+/* justify-content: center; */
+/* background-color: rgba(247, 9, 235, 0.507); */
+/* width: 100%; */
+/* }  */
+

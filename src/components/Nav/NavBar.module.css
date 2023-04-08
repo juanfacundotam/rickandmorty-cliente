@@ -1,0 +1,223 @@
+.nav {
+  /* border: 1px solid rgba(0, 0, 0, 0.548); */
+  background: linear-gradient(
+    315deg,
+    rgba(0, 0, 0, 0.63),
+    #4106499d,
+    #92007f81,
+    rgba(168, 69, 170, 0.445)
+    );
+    backdrop-filter: blur(20px);
+  margin: auto;
+  width: 80%;
+  height: 80px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .divLinks {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+.nav .divLinks NavLink{
+
+}
+
+.nav .divNavSearch {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+}
+.nav .divNavSearch .divSearch {
+  text-align: end;
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+}
+.active {
+  background: linear-gradient(315deg, #be07a6c0, #7c1a8b);
+  /* border: 1px solid #7c1a8b; */
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+}
+.active:hover {
+  color:#efb1f8
+}
+.disable {
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  padding: 5px 10px 5px 10px;
+}
+.disable:hover {
+  color:#efb1f8
+}
+.btnLogout {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  /* right: 80px;
+  top: 27px; */
+  margin-right: 20px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: rgba(255, 0, 247, 0.512);
+  cursor: pointer;
+}
+.btnLogout button {
+  display: flex;
+  color: white;
+  
+  border: transparent;
+  background: linear-gradient(315deg, #d8320d19, #7c1a8b);
+  font-family: "Poiret One", cursive;
+  font-size: 18px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px 0 0;
+  color: white;
+}
+
+.btnLogout button:hover {
+  background-color: rgb(255, 0, 255);
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 0px 122px 18px rgba(219, 27, 206, 0.8);
+  -moz-box-shadow: 0px 0px 122px 18px rgba(219, 27, 206, 0.8);
+  box-shadow: 0px 0px 122px 18px rgba(219, 27, 206, 0.8);
+}
+
+@media screen and (max-width: 1050px) {
+  .nav {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 70%;
+    height: 67px;
+  }
+
+  .nav .divLinks {
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .active {
+    margin: 0 20px 0 20px;
+  }
+  .disable {
+    margin: 0 20px 0 20px;
+  }
+  .nav .divSearch {
+    height: fit-content;
+    text-align: center;
+    margin: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+  }
+  .divNavSearch .btnLogout {
+    position: absolute;
+    left: 30px;
+    top: 87px;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    width: 80%;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+  .redes {
+    position: fixed;
+  }
+  .active {
+    margin: 0 5px 0 5px;
+    font-size: 25px;
+  }
+  .disable {
+    margin: 0 5px 0 5px;
+    font-size: 25px;
+  }
+  .divNavSearch .btnLogout {
+    top: 80px;
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .nav {
+    height: 55px;
+  }
+  .active {
+    margin: 0 5px 0 5px;
+    font-size: 21px;
+  }
+  .disable {
+    margin: 0 5px 0 5px;
+    font-size: 21px;
+  }
+
+  .nav .divLinks {
+
+    margin-bottom: 0px;
+  }
+  .divNavSearch .btnLogout {
+    top: 68px;
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    width: 100vh;
+    /* background: none; */
+    border: none;
+  }
+  .active {
+    margin: 0 5px 0 5px;
+    font-size: 21px;
+  }
+  .disable {
+    margin: 0 5px 0 5px;
+    font-size: 21px;
+  }
+
+  .divNavSearch .btnLogout {
+    top: 65px;
+    left: 30px;
+  }
+}
