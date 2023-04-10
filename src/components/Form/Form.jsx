@@ -45,7 +45,7 @@ export default function Form (props) {
         transition={{duration:0.8}}>
 
         <form className={style.form}  onSubmit={handleSubmit}>
-            <p style={{color: "yellow"}}>"Crea un usuario falso para probar la App"</p>
+            <p style={{color: "yellow", fontSize: "15px", textAlign: "center"}}>Crea un usuario falso para probar la App</p>
             <h1>Rick and Morty App</h1>
             <div className={style.divUser}>
             <label htmlFor="username">UserName</label>
