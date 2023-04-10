@@ -14,6 +14,7 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 //
 function App() {
   const [characters, setCharacters] = useState([]);
+  const [idUser, setIdUser] = useState("");
 
   const [access, setAccess] = useState(false);
   const location = useLocation();
@@ -24,11 +25,13 @@ function App() {
   async function login(userData) {
     const { username, password } = userData;
     try {
-      const response = await axios.get(
+      const responseLogin = await axios.get(
         `/rickandmorty/login?username=${username}&password=${password}`
       );
-      if (response.data.access) {
+
+      if (responseLogin.data.access) {
         setAccess(true);
+        setIdUser(responseLogin.data.id)
         navigate("/home");
       }
     } catch (error) {
@@ -38,6 +41,7 @@ function App() {
   }
   function logout() {
     setAccess(false);
+    setIdUser("")
     navigate("/");
   }
   useEffect(() => {
@@ -81,11 +85,11 @@ function App() {
           <Route
             path="/home"
             element={
-              <Home characters={characters} closeCharacter={closeCharacter} />
+              <Home characters={characters} closeCharacter={closeCharacter} idUser={idUser}/>
             }
           />
           <Route path="/about" element={<About />} />
-          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/favorites" element={<Favorites idUser={idUser}/>} />
           <Route path="/detail/:detailId" element={<Detail />} />
           <Route path="*" element={<Error />} />
         </Routes>

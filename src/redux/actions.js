@@ -25,9 +25,9 @@ export const getCharacterDetail = (id) => {
   };
 };
 
-export const getFavorites = () => {
+export const getFavorites = (id) => {
   return async function (dispatch) {
-    const response = await axios.get(`/rickandmorty/fav`);
+    const response = await axios.get(`/rickandmorty/userfavs/${id}`);
     dispatch({ type: GET_FAVORITES, payload: response.data });
   };
 };

@@ -5,16 +5,17 @@ import { useDispatch } from "react-redux";
 import { getFavorites } from "../../redux/actions.js";
 import { useEffect } from "react";
 
-export default function Cards({ characters, closeCharacter}) {
+export default function Cards({ characters, closeCharacter, idUser}) {
   //CUANDO MAPEAMOS AGREGAR LA KEY
   const dispatch = useDispatch();
   
-  useEffect(() => {
-    dispatch(getFavorites())
-  }, [])
+  // useEffect(() => {
+  //   dispatch(getFavorites(idUser))
+  // }, [])
 
   return (
     <div className={styles.containerCards}>
+
       {characters.map(({ id, name, species, gender, image, status, origin}) => {
         return (
 
@@ -28,6 +29,7 @@ export default function Cards({ characters, closeCharacter}) {
             origin={origin}
             image={image}
             onClose={closeCharacter}
+            idUser={idUser}
           />
         );
       })}

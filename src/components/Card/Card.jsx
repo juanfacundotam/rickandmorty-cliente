@@ -29,7 +29,7 @@ export default function Card(props) {
   }, [myFavorites]);
 
   const addFavorite = async () => {
-    const { id, name, status, species, gender, origin, image } = props;
+    const { id, name, status, species, gender, origin, image, idUser } = props;
     const body = {
       id,
       name,
@@ -38,18 +38,21 @@ export default function Card(props) {
       gender,
       origin: origin.name,
       image,
+      iduser: idUser
     };
-    console.log(origin.name)
+    console.log(body)
     await axios.post("/rickandmorty/fav", body);
-    console.log("Adherido a favoritos");
+    // console.log("Adherido a favoritos");
 
   };
 
-  const deleteFavorite = async (id) => {
-    await axios.delete(`/rickandmorty/fav/${id}`);
+  const deleteFavorite = async () => {
+    console.log(props.id)
+    console.log(props.idUser)
+    await axios.delete(`/rickandmorty/favdelete?idUser=${props.idUser}&idFavorite=${props.id}`);
     // dispatch(getFavorites());
     alert("Eliminado de los favoritos con exito");
-    dispatch(getFavorites())
+    dispatch(getFavorites(props.idUser))
   };
 
   const handleFavorite = () => {
