@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect} from "react";
+import { useDispatch} from "react-redux";
 import style from "./Form.module.css";
 import validation from "./validation";
 import {Link} from "react-router-dom"
 import {motion} from "framer-motion";
+import { resetFavorites } from "../../redux/actions";
 
 export default function Form (props) {
+    const dispatch = useDispatch();
     const [userData, setUserData] = React.useState({
         username:'',
         password:''
@@ -13,7 +16,11 @@ export default function Form (props) {
         username: '',
         password:''
     });
-
+    
+    useEffect(()=>{
+        dispatch(resetFavorites);
+    },[])
+    
     const handleInputChange = (event) => {
         const property = event.target.name;
         const value = event.target.value
@@ -38,6 +45,7 @@ export default function Form (props) {
         transition={{duration:0.8}}>
 
         <form className={style.form}  onSubmit={handleSubmit}>
+            <p style={{color: "yellow"}}>"Crea un usuario falso para probar la App"</p>
             <h1>Rick and Morty App</h1>
             <div className={style.divUser}>
             <label htmlFor="username">UserName</label>

@@ -9,9 +9,9 @@ export default function Cards({ characters, closeCharacter, idUser}) {
   //CUANDO MAPEAMOS AGREGAR LA KEY
   const dispatch = useDispatch();
   
-  // useEffect(() => {
-  //   dispatch(getFavorites(idUser))
-  // }, [])
+  useEffect(() => {
+    dispatch(getFavorites(idUser))
+  }, [])
 
   return (
     <div className={styles.containerCards}>

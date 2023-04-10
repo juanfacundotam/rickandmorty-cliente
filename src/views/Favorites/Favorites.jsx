@@ -27,7 +27,10 @@ const Favorites = ({idUser}) => {
 
   useEffect(() => {
     dispatch(getFavorites(idUser));
-    {console.log(idUser)}
+
+        return () => {
+      dispatch(resetFavorites());
+    }
   }, []);
 
   return (

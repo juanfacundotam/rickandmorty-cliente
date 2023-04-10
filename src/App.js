@@ -46,6 +46,9 @@ function App() {
   }
   useEffect(() => {
     !access && navigate("/");
+    return () => {
+      setCharacters([]);
+    }
   }, [access]);
 
   const closeCharacter = (id) => {
@@ -62,7 +65,6 @@ function App() {
         `/rickandmorty/onsearch/${character}`
       );
       if (response.data.name) {
-        console.log(response.data)
         setCharacters((oldChars) => [...oldChars, response.data]);
       } else {
         window.alert("No hay personajes con ese ID");

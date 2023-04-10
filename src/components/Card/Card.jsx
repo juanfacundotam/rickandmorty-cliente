@@ -40,15 +40,13 @@ export default function Card(props) {
       image,
       iduser: idUser
     };
-    console.log(body)
+
     await axios.post("/rickandmorty/fav", body);
-    // console.log("Adherido a favoritos");
+
 
   };
 
   const deleteFavorite = async () => {
-    console.log(props.id)
-    console.log(props.idUser)
     await axios.delete(`/rickandmorty/favdelete?idUser=${props.idUser}&idFavorite=${props.id}`);
     // dispatch(getFavorites());
     alert("Eliminado de los favoritos con exito");

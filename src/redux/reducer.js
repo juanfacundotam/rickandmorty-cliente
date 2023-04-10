@@ -69,6 +69,7 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         myFavorites: state.allCharacters,
+        
       };
 
     case ORDER_CARDS:
