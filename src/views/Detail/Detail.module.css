@@ -124,7 +124,7 @@
 @media screen and (max-width: 585px) {
   .divDetail .divText h1 {
    font-size: 25px;
-   border: 1px solid green;
+   /* border: 1px solid green; */
   }
   .divDetail .divText {
     font-family: "Poiret One", cursive;
