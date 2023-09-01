@@ -8,7 +8,7 @@ import store from "./redux/store"
 import axios from "axios";
 
 // axios.defaults.baseURL = "http://localhost:3001";
-axios.defaults.baseURL = "https://rickandmorty-server-production.up.railway.app/";
+axios.defaults.baseURL = "https://rick-morty-server.onrender.com";
 
 
 
