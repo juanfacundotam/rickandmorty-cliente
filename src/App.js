@@ -32,7 +32,7 @@ function App() {
       if (responseLogin.data.access) {
         setAccess(true);
         setIdUser(responseLogin.data.id)
-        navigate("/home");
+        // navigate("/home");
       }
     } catch (error) {
       alert("Usuario y/o contraseña incorrecta");

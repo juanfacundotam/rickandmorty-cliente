@@ -1,10 +1,10 @@
 const validation = (userData) => {
+  const errors = {};
   // const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/; //Esta me cuelga todo al poner varios caracteres!
   const regexEmail =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const regexPass = new RegExp("[0-9]");
   // const regexPass = new RegExp("^(?=.[a-z])(?=.[A-Z])(?=.*[0-9])(?=.{6,10})");
-  const errors = {};
 
   if (!userData.username) {
     errors.username = ">> UserName: No puede quedar vacío";
